@@ -38,12 +38,12 @@ public class server {
 				System.out.println("point : " + obj);
 				String point = obj.toString();
 				
-				if(abc != 30719) {
-					FileWriter reader = new FileWriter("D:\\pro.insight\\total\\" + ID + ".txt");
+				
+				FileWriter reader = new FileWriter("D:\\pro.insight\\total\\" + ID + ".txt");
 					
-					reader.write(point);
-					reader.close();
-				}
+				reader.write(point);
+				reader.close();
+				
 				
 				ObjectOutputStream outstream = new ObjectOutputStream(sock.getOutputStream());
 				
